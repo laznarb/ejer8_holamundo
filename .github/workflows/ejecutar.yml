@@ -21,4 +21,4 @@ jobs:
         javac src/Hola.java
     - name: Ejecutar el archivo
       run:
-        java Hola
+        java -cp src Hola 
