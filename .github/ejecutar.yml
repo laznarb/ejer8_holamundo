@@ -1,0 +1,14 @@
+name: Prueba de ejecucion de un java github actions
+
+on:
+  push:
+    branches: [ main ]
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Ejecutar archivo
+      run:
+        javac src/Hola.java
+        && java Hola.class
